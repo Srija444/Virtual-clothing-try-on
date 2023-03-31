@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Virtual Clothing Try-On</title>
+</head>
+<body>
+	<h1>Virtual Clothing Try-On</h1>
+	
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<label for="file">Upload your image:</label>
+		<input type="file" name="file" id="file"><br><br>
+		
+		<label for="outfit">Select an outfit:</label>
+		<select name="outfit" id="outfit">
+			<option value="outfit1.jpg">Outfit 1</option>
+			<option value="outfit2.jpg">Outfit 2</option>
+			<option value="outfit3.jpg">Outfit 3</option>
+		</select><br><br>
+		
+		<input type="submit" value="Try On">
+	</form>
+	
+	<div id="result">
+		<!-- Display the uploaded image with the selected outfit -->
+	</div>
+</body>
+</html>
